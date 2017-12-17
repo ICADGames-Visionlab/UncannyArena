@@ -1,2 +1,2 @@
 # UncannyArena
-Jogo estilo arena desenvolvido em março de 2016
+Jogo estilo arena desenvolvido pela equipe do ICAD/Visionlab em fevereiro/março de 2016
