@@ -5,15 +5,15 @@ audioManager={}
 function audioManager.load()
   --audioManager.bulletSound = love.audio.newSource("/Assets/Sfx/b1.wav")
   --audioManager.deathSound = love.audio.newSource("/Assets/Sfx/Dragonite.wav")
-  audioManager.explodeSound = love.audio.newSource("/Assets/Sfx/shieldBreak.wav")
-  audioManager.characterSelectSound = love.audio.newSource("/Assets/Sfx/Character_select.wav")
-  audioManager.optionSelectSound = love.audio.newSource("/Assets/Sfx/Clique.wav")
-  audioManager.matchStartSound = love.audio.newSource("/Assets/Sfx/Match_Start.wav")
-  audioManager.exitSound = love.audio.newSource("/Assets/Sfx/Voltar.wav")
-  audioManager.endMatchSound = love.audio.newSource("/Assets/Music/Partida Terminada.mp3")
+  audioManager.explodeSound = love.audio.newSource("/Assets/Sfx/shieldBreak.wav", "static")
+  audioManager.characterSelectSound = love.audio.newSource("/Assets/Sfx/Character_select.wav", "static")
+  audioManager.optionSelectSound = love.audio.newSource("/Assets/Sfx/Clique.wav", "static")
+  audioManager.matchStartSound = love.audio.newSource("/Assets/Sfx/Match_Start.wav", "static")
+  audioManager.exitSound = love.audio.newSource("/Assets/Sfx/Voltar.wav", "static")
+  audioManager.endMatchSound = love.audio.newSource("/Assets/Music/Partida Terminada.mp3", "static")
   
-  audioManager.menuMusic = love.audio.newSource("/Assets/Music/Uncanny Arena - Título.mp3")
-  audioManager.characterScreenMusic = love.audio.newSource("/Assets/Music/Uncanny Arena - Escolha de Personagem.mp3")
+  audioManager.menuMusic = love.audio.newSource("/Assets/Music/Uncanny Arena - Título.mp3", "static")
+  audioManager.characterScreenMusic = love.audio.newSource("/Assets/Music/Uncanny Arena - Escolha de Personagem.mp3", "static")
   
   --audioManager.bulletSound:setVolume(0.5)
   --audioManager.deathSound:setVolume(0.5)
@@ -47,7 +47,7 @@ function audioManager.load()
   audioManager.musicPlaying = nil
   for i,v in ipairs(soundAssets) do
     for j,w in pairs(v) do
-      v[j] = love.audio.newSource(w)
+      v[j] = love.audio.newSource(w, "static")
     end
   end
 end

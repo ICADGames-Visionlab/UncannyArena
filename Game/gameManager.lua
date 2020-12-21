@@ -20,7 +20,7 @@ function gameManager.load(game)
   Player.load()
   bulletManager.load()
   
-  battleback = love.graphics.newVideo("/Assets/Videos/Battle1.ogv",false)
+  battleback = love.graphics.newVideo("/Assets/Videos/Battle1.ogv")--,false)
   
   
 end

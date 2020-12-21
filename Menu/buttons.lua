@@ -22,7 +22,7 @@ function buttons.load()
     x=(tw-title.width)/2,
     y=(th-title.height)/2
   }
-  menuvideo = love.graphics.newVideo("/Assets/Videos/Menu6.ogv",false)
+  menuvideo = love.graphics.newVideo("/Assets/Videos/Menu6.ogv") --,false)
   menuvideo:play()
   
   
